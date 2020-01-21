@@ -9,7 +9,7 @@ speech = LiveSpeech(
     no_search=False,
     full_utt=False,
     hmm=os.path.join(model_path, 'en-us'),
-    lm=False,
+    lm=os.path.join(model_path, 'en-us.lm.bin'),
     dic=os.path.join(model_path, 'cmudict-en-us.dict')
 )
 for phrase in speech:
